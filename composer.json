@@ -10,6 +10,7 @@
         "friendsofsymfony/rest-bundle": "^3.7",
         "nelmio/api-doc-bundle": "^4.26",
         "nelmio/cors-bundle": "^2.4",
+        "php-unit-conversion/php-unit-conversion": "^1.30",
         "ramsey/collection": "^2.0",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "7.0.*",

@@ -11,6 +11,10 @@ composer.phar
 /vendor/
 ###< symfony/framework-bundle ###
 
+###> APP ###
+src/Command/DevCommand.php
+###< APP ###
+
 ###> friendsofphp/php-cs-fixer ###
 /.php-cs-fixer.php
 /.php-cs-fixer.cache
