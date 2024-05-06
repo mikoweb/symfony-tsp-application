@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Module\Location\Domain;
+namespace App\Shared\Domain;
 
+use PhpUnitConversion\Unit\Length\KiloMeter;
 use Ramsey\Collection\Map\AbstractTypedMap;
 use Ramsey\Collection\Map\TypedMap;
-use PhpUnitConversion\Unit\Length\KiloMeter;
 
 /**
  * @extends AbstractTypedMap<string, TypedMap<string, KiloMeter>>

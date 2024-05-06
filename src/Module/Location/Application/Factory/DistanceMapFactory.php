@@ -3,9 +3,9 @@
 namespace App\Module\Location\Application\Factory;
 
 use App\Module\Location\Application\Math\GeoDistance;
-use App\Module\Location\Domain\DistanceMap;
-use App\Module\Location\Domain\Location;
-use App\Module\Location\Domain\LocationCollection;
+use App\Shared\Domain\DistanceMap;
+use App\Shared\Domain\Location;
+use App\Shared\Domain\LocationCollection;
 use PhpUnitConversion\Unit\Length\KiloMeter;
 use Ramsey\Collection\Map\TypedMap;
 

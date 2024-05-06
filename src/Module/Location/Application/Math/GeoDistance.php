@@ -3,7 +3,7 @@
 namespace App\Module\Location\Application\Math;
 
 use App\Module\Location\Domain\Constant;
-use App\Module\Location\Domain\Location;
+use App\Shared\Domain\Location;
 use PhpUnitConversion\Unit\Length\KiloMeter;
 
 /**

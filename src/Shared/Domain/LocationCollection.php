@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Module\Location\Domain;
+namespace App\Shared\Domain;
 
 use Ramsey\Collection\AbstractCollection;
 
