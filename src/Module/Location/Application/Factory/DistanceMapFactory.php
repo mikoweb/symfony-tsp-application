@@ -30,7 +30,12 @@ readonly class DistanceMapFactory
     private function putDistances(TypedMap $distances, Location $a, LocationCollection $locations): void
     {
         foreach ($locations as $b) {
-            $distances->put($b->id, GeoDistance::calcDistanceV2($a, $b));
+            $distances->put(
+                $b->id,
+                $a->id === $b->id
+                    ? new KiloMeter(0.0)
+                    : GeoDistance::calcDistanceV2($a, $b)
+            );
         }
     }
 }
