@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Module\Location\Application\Interaction\SharedQuery\Handler;
+namespace App\Module\Distance\Application\Interaction\SharedQuery\Handler;
 
-use App\Module\Location\Application\Factory\DistanceMapFactory;
+use App\Module\Distance\Application\Factory\DistanceMapFactory;
 use App\Shared\Application\Interaction\SharedQuery\AskForDistanceMapQuery;
 use App\Shared\Domain\DistanceMap;
 use Symfony\Component\Messenger\Attribute\AsMessageHandler;

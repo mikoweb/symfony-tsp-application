@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Module\Location\Application\Math;
+namespace App\Module\Distance\Application\Math;
 
-use App\Module\Location\Domain\Constant;
+use App\Module\Distance\Domain\Constant;
 use App\Shared\Domain\Location;
 use PhpUnitConversion\Unit\Length\KiloMeter;
 

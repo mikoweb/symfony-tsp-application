@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Module\Location\Domain;
+namespace App\Module\Distance\Domain;
 
 final class Constant
 {

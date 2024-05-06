@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Module\Location\Application\Factory;
+namespace App\Module\Distance\Application\Factory;
 
-use App\Module\Location\Application\Math\GeoDistance;
+use App\Module\Distance\Application\Math\GeoDistance;
 use App\Shared\Domain\DistanceMap;
 use App\Shared\Domain\Location;
 use App\Shared\Domain\LocationCollection;
