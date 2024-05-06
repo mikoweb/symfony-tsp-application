@@ -2,14 +2,15 @@
 
 namespace App\Module\TSP\Application\Problem;
 
-use Ramsey\Collection\Collection;
+use Ramsey\Collection\CollectionInterface;
 
 interface AntInterface
 {
     public function start(): void;
 
     /**
-     * @return Collection<string>
+     * @return CollectionInterface<string>
      */
-    public function getPath(): Collection;
+    public function getPath(): CollectionInterface;
+    public function getLength(): float;
 }

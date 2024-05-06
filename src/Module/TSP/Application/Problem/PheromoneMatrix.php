@@ -2,6 +2,7 @@
 
 namespace App\Module\TSP\Application\Problem;
 
+use App\Module\TSP\Domain\Constant;
 use Ramsey\Collection\Map\AbstractTypedMap;
 use Ramsey\Collection\Map\TypedMap;
 use UnexpectedValueException;
@@ -14,8 +15,10 @@ class PheromoneMatrix extends AbstractTypedMap
     /**
      * @param string[] $locations
      */
-    public static function createFromLocations(array $locations, float $initialValue = 1.0): self
-    {
+    public static function createFromLocations(
+        array $locations,
+        float $initialValue = Constant::DEFAULT_PHEROMONE_INITIAL_VALUE,
+    ): self {
         $matrix = new self();
 
         foreach ($locations as $a) {
@@ -52,6 +55,12 @@ class PheromoneMatrix extends AbstractTypedMap
         $this->checkPheromoneExists($a, $b);
 
         $this->get($a)->put($b, $value);
+    }
+
+    public function increasePheromone(string $a, string $b, float $increaseValue): void
+    {
+        $value = $this->getPheromone($a, $b);
+        $this->updatePheromone($a, $b, $value + $increaseValue);
     }
 
     private function checkPheromoneExists(string $a, string $b): void

@@ -2,8 +2,10 @@
 
 namespace App\Module\TSP\Application\Problem;
 
+use App\Module\TSP\Domain\Constant;
 use App\Shared\Domain\DistanceMap;
 use Ramsey\Collection\Collection;
+use Ramsey\Collection\CollectionInterface;
 use Ramsey\Collection\Map\TypedMap;
 use Random\Randomizer;
 use UnexpectedValueException;
@@ -14,18 +16,18 @@ use UnexpectedValueException;
 class SalesmanAnt implements AntInterface
 {
     /**
-     * @var Collection<string>
+     * @var CollectionInterface<string>
      */
-    private Collection $path;
+    private CollectionInterface $path;
     private ?string $currentLocation;
 
     public function __construct(
         private readonly string $initialLocation,
         private readonly DistanceMap $distanceMap,
         private readonly PheromoneMatrix $pheromoneMatrix,
-        private readonly float $alpha = 1.0,
-        private readonly float $beta = 5.0,
-        private readonly int $distanceCoefficient = 150,
+        private readonly float $alpha = Constant::DEFAULT_ALPHA,
+        private readonly float $beta = Constant::DEFAULT_BETA,
+        private readonly int $distanceCoefficient = Constant::DEFAULT_DISTANCE_COEFFICIENT,
     ) {
         $this->path = new Collection('string');
         $this->currentLocation = null;
@@ -45,11 +47,22 @@ class SalesmanAnt implements AntInterface
     }
 
     /**
-     * @return Collection<string>
+     * @return CollectionInterface<string>
      */
-    public function getPath(): Collection
+    public function getPath(): CollectionInterface
     {
         return clone $this->path;
+    }
+
+    public function getLength(): float
+    {
+        $length = 0.0;
+
+        for ($i = 0; $i < $this->path->count() - 1; ++$i) {
+            $length += $this->distanceMap->getDistance($this->path[$i], $this->path[$i + 1])->getValue();
+        }
+
+        return $length;
     }
 
     private function findNextLocation(): string
