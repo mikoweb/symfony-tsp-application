@@ -93,6 +93,10 @@ readonly class AntColonyOptimization
         $path = $ant->getPath();
         $lengthCoefficient = $ant->getLength() / $this->distanceCoefficient;
 
+        if ($lengthCoefficient == 0) {
+            $lengthCoefficient = 0.000001;
+        }
+
         for ($i = 0; $i < $path->count() - 1; ++$i) {
             $this->pheromoneMatrix->increasePheromone($path[$i], $path[$i + 1], 1 / $lengthCoefficient);
             $this->pheromoneMatrix->increasePheromone($path[$i + 1], $path[$i], 1 / $lengthCoefficient);
