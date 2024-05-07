@@ -2,7 +2,7 @@ when@dev:
     nelmio_api_doc:
         documentation:
             info:
-                title: Symfony Messages API
+                title: Symfony TSP API
                 description: API
                 version: 0.0.1
         areas:

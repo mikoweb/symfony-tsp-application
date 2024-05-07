@@ -1,0 +1,3 @@
+api_tsp:
+    resource: api_routes/tsp.yaml
+    prefix: /tsp

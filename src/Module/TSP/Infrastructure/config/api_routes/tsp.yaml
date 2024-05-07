@@ -1,0 +1,4 @@
+api_tsp_solve:
+    path: /solve
+    controller: App\Module\TSP\UI\Controller\SolveController::solve
+    methods: [POST]
