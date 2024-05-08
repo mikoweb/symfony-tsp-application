@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae989ef1871ddb63226dcb603411ce55",
+    "content-hash": "44329de0631c2e394e0d2c8f18d7b442",
     "packages": [
         {
             "name": "doctrine/deprecations",
@@ -158,6 +158,81 @@
                 "source": "https://github.com/FriendsOfSymfony/FOSRestBundle/tree/3.7.1"
             },
             "time": "2024-04-12T22:57:10+00:00"
+        },
+        {
+            "name": "markrogoyski/math-php",
+            "version": "v2.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/markrogoyski/math-php.git",
+                "reference": "e587bfe3aadddfba0f3a40f49d2ed91132f30c5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/markrogoyski/math-php/zipball/e587bfe3aadddfba0f3a40f49d2ed91132f30c5a",
+                "reference": "e587bfe3aadddfba0f3a40f49d2ed91132f30c5a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phploc/phploc": "*",
+                "phpmd/phpmd": "^2.6",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^8.5",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MathPHP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Rogoyski",
+                    "email": "mark@rogoyski.com",
+                    "homepage": "https://github.com/markrogoyski",
+                    "role": "Lead developer"
+                },
+                {
+                    "name": "Kevin Nowaczyk",
+                    "homepage": "https://github.com/Beakerboy",
+                    "role": "Developer"
+                },
+                {
+                    "name": "MathPHP Community of Contributors",
+                    "homepage": "https://github.com/markrogoyski/math-php/graphs/contributors"
+                }
+            ],
+            "description": "Math Library for PHP. Features descriptive statistics and regressions; Continuous and discrete probability distributions; Linear algebra with matrices and vectors, Numerical analysis; special mathematical functions; Algebra",
+            "homepage": "https://github.com/markrogoyski/math-php/",
+            "keywords": [
+                "algebra",
+                "combinatorics",
+                "distributions",
+                "linear algebra",
+                "math",
+                "mathematics",
+                "matrix",
+                "numerical analysis",
+                "probability",
+                "regressions",
+                "statistics"
+            ],
+            "support": {
+                "issues": "https://github.com/markrogoyski/math-php/issues",
+                "source": "https://github.com/markrogoyski/math-php/tree/v2.10.0"
+            },
+            "time": "2024-04-17T00:09:51+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4293,6 +4368,68 @@
             "time": "2023-12-19T21:51:00+00:00"
         },
         {
+            "name": "symfony/stopwatch",
+            "version": "v7.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/stopwatch.git",
+                "reference": "41a7a24aa1dc82adf46a06bc292d1923acfe6b84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/41a7a24aa1dc82adf46a06bc292d1923acfe6b84",
+                "reference": "41a7a24aa1dc82adf46a06bc292d1923acfe6b84",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/service-contracts": "^2.5|^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Stopwatch\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a way to profile code",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/stopwatch/tree/v7.0.7"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-04-18T09:29:19+00:00"
+        },
+        {
             "name": "symfony/string",
             "version": "v7.0.7",
             "source": {
@@ -6121,68 +6258,6 @@
                 }
             ],
             "time": "2024-04-27T21:12:25+00:00"
-        },
-        {
-            "name": "symfony/stopwatch",
-            "version": "v7.0.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/stopwatch.git",
-                "reference": "41a7a24aa1dc82adf46a06bc292d1923acfe6b84"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/41a7a24aa1dc82adf46a06bc292d1923acfe6b84",
-                "reference": "41a7a24aa1dc82adf46a06bc292d1923acfe6b84",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "symfony/service-contracts": "^2.5|^3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Stopwatch\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides a way to profile code",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/stopwatch/tree/v7.0.7"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-04-18T09:29:19+00:00"
         },
         {
             "name": "symfony/web-profiler-bundle",
