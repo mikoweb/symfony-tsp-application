@@ -51,7 +51,7 @@ readonly class AskForProblemSolutionHandler
             c: $query->solveRequest->c,
         );
 
-        $results = $colony->optimize();
+        $results = $colony->optimize($query->solveRequest->iterations);
 
         return new SolutionResultDto(
             path: $this->createPath($results->first()->path, $locations),

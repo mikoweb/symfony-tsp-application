@@ -14,6 +14,7 @@ readonly class SolveRequestDto
          */
         #[Assert\NotBlank]
         public array $locations,
+        public int $iterations = Constant::DEFAULT_ITERATIONS,
         public int $initialLocationIndex = 0,
         public float $alpha = Constant::DEFAULT_ALPHA,
         public float $beta = Constant::DEFAULT_BETA,
