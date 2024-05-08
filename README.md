@@ -28,6 +28,7 @@ JSON Body:
 
 ```json
 {
+    "iterations": 250,
     "initialLocationIndex": 0, 
     "alpha": 1.0, 
     "beta": 2.0, 
