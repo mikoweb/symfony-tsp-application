@@ -28,14 +28,14 @@ JSON Body:
 
 ```json
 {
-    "iterations": 250,
-    "initialLocationIndex": 0, 
-    "alpha": 1.0, 
-    "beta": 2.0, 
-    "distanceCoefficient": 100, 
-    "evaporation": 0.35, 
-    "antFactor": 0.8, 
-    "c": 1.0, 
+    "iterations": 100,
+    "initialLocationIndex": 0,
+    "alpha": 1.0,
+    "beta": 2.0,
+    "distanceCoefficient": 103,
+    "evaporation": 0.3858,
+    "antFactor": 0.8917,
+    "c": 0.7967,
     "locations": [
         {
             "lat": 52.228335194897305,
