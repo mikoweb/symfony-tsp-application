@@ -1,0 +1,912 @@
+[
+    {
+        "meanTime": 533.5,
+        "meanLength": 1948.5355455873105,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 564,
+        "meanLength": 1949.2083251574295,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 150,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 556.6666666666666,
+        "meanLength": 1949.8811047275487,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 520.1666666666666,
+        "meanLength": 1949.8811047275492,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.4,
+            "antFactor": 0.9,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 412.5,
+        "meanLength": 1950.5538842976682,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.4,
+            "antFactor": 0.7,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 518.8333333333334,
+        "meanLength": 1951.2266638677877,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 1,
+            "evaporation": 0.4,
+            "antFactor": 0.9,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 576.1666666666666,
+        "meanLength": 1951.2266638677877,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.4,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 576,
+        "meanLength": 1951.8684995882434,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 529,
+        "meanLength": 1952.0862076950625,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.4,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 460,
+        "meanLength": 1952.541279158363,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.4,
+            "antFactor": 0.8,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 631,
+        "meanLength": 1952.7589872651822,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 100,
+            "evaporation": 0.4,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 523.8333333333334,
+        "meanLength": 1953.214058728482,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.4,
+            "antFactor": 0.9,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 338,
+        "meanLength": 1953.2140587284823,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.35,
+            "antFactor": 0.6,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 421.8333333333333,
+        "meanLength": 1953.2140587284823,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 100,
+            "evaporation": 0.35,
+            "antFactor": 0.7,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 451.6666666666667,
+        "meanLength": 1953.2140587284823,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.4,
+            "antFactor": 0.8,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 460.6666666666667,
+        "meanLength": 1953.2140587284823,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.35,
+            "antFactor": 0.8,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 499.8333333333333,
+        "meanLength": 1953.2140587284823,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 0.8,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 528,
+        "meanLength": 1953.2140587284823,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 100,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 537.5,
+        "meanLength": 1953.2140587284823,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.4,
+            "antFactor": 0.8,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 559.5,
+        "meanLength": 1953.2140587284823,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 573.5,
+        "meanLength": 1953.2140587284823,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 529,
+        "meanLength": 1953.2140587284828,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 150,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 445.3333333333333,
+        "meanLength": 1953.400822985638,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.35,
+            "antFactor": 0.8,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 525,
+        "meanLength": 1953.8868382986013,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 100,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 428.8333333333333,
+        "meanLength": 1953.8868382986018,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 100,
+            "evaporation": 0.35,
+            "antFactor": 0.7,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 517,
+        "meanLength": 1953.8868382986018,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 527.1666666666666,
+        "meanLength": 1953.8868382986018,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.4,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 566.3333333333334,
+        "meanLength": 1953.8868382986018,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 418.3333333333333,
+        "meanLength": 1953.886838298602,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.4,
+            "antFactor": 0.7,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 440,
+        "meanLength": 1953.886838298602,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 0.7,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 536.8333333333334,
+        "meanLength": 1953.886838298602,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 150,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 550.1666666666666,
+        "meanLength": 1953.886838298602,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 551,
+        "meanLength": 1954.0736025557571,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 1,
+            "evaporation": 0.4,
+            "antFactor": 1,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 552.5,
+        "meanLength": 1954.5286740190577,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.4,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 561.3333333333334,
+        "meanLength": 1954.559617868721,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 100,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 408,
+        "meanLength": 1954.7463821258764,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.35,
+            "antFactor": 0.7,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 451,
+        "meanLength": 1954.7463821258764,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.4,
+            "antFactor": 0.8,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 560.3333333333334,
+        "meanLength": 1954.7463821258764,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 200,
+            "evaporation": 0.4,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 568.6666666666666,
+        "meanLength": 1954.7463821258764,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 548.1666666666666,
+        "meanLength": 1954.7463821258768,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 100,
+            "evaporation": 0.4,
+            "antFactor": 0.8,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 463,
+        "meanLength": 1955.2323974388403,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.4,
+            "antFactor": 0.8,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 445.6666666666667,
+        "meanLength": 1955.8742331592964,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.35,
+            "antFactor": 0.8,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 448,
+        "meanLength": 1955.8742331592964,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.35,
+            "antFactor": 0.8,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 452.6666666666667,
+        "meanLength": 1955.8742331592964,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 0.8,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 551.8333333333334,
+        "meanLength": 1955.8742331592964,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.4,
+            "antFactor": 1,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 563.8333333333334,
+        "meanLength": 1955.8742331592964,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 50,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 530.3333333333334,
+        "meanLength": 1956.5470127294157,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.4,
+            "antFactor": 0.9,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 538.5,
+        "meanLength": 1956.5470127294157,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.4,
+            "antFactor": 0.9,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 569.6666666666666,
+        "meanLength": 1956.5470127294157,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 100,
+            "evaporation": 0.4,
+            "antFactor": 0.9,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 576.5,
+        "meanLength": 1956.5470127294157,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.4,
+            "antFactor": 1,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 543.3333333333334,
+        "meanLength": 1956.5470127294159,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 584.3333333333334,
+        "meanLength": 1956.5470127294159,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.4,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 521,
+        "meanLength": 1956.7647208362348,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 1,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 459.8333333333333,
+        "meanLength": 1957.219792299535,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.4,
+            "antFactor": 0.8,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 460.5,
+        "meanLength": 1957.219792299535,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 0.7,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 518.5,
+        "meanLength": 1957.219792299535,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 513.3333333333334,
+        "meanLength": 1957.2197922995354,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 3.5,
+            "distanceCoefficient": 1,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 531.1666666666666,
+        "meanLength": 1957.2197922995354,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 150,
+            "evaporation": 0.35,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 534.8333333333334,
+        "meanLength": 1957.2197922995354,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 1,
+            "evaporation": 0.6000000000000001,
+            "antFactor": 0.9,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 556,
+        "meanLength": 1957.2197922995354,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 50,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.6
+        }
+    },
+    {
+        "meanTime": 560.8333333333334,
+        "meanLength": 1957.2197922995354,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 563.6666666666666,
+        "meanLength": 1957.2197922995354,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 565.5,
+        "meanLength": 1957.3557558107714,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 150,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 0.8
+        }
+    },
+    {
+        "meanTime": 558.8333333333334,
+        "meanLength": 1957.3557558107716,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2.5,
+            "distanceCoefficient": 200,
+            "evaporation": 0.35,
+            "antFactor": 1,
+            "c": 1
+        }
+    },
+    {
+        "meanTime": 594.3333333333334,
+        "meanLength": 1957.3999586428408,
+        "iterations": 100,
+        "testAttemptsNum": 6,
+        "parameters": {
+            "alpha": 1,
+            "beta": 2,
+            "distanceCoefficient": 100,
+            "evaporation": 0.6000000000000001,
+            "antFactor": 0.9,
+            "c": 0.8
+        }
+    }
+]

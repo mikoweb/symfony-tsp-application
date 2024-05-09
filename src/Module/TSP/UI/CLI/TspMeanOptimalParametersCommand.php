@@ -56,9 +56,9 @@ class TspMeanOptimalParametersCommand extends Command
             alpha: round(Average::mean($topResults->column('alpha'))),
             beta: round(Average::mean($topResults->column('beta'))),
             distanceCoefficient: (int) round(Average::mean($topResults->column('distanceCoefficient'))),
-            evaporation: Average::mean($topResults->column('evaporation')),
-            antFactor: Average::mean($topResults->column('antFactor')),
-            c: Average::mean($topResults->column('c')),
+            evaporation: round(Average::mean($topResults->column('evaporation')), 4),
+            antFactor: round(Average::mean($topResults->column('antFactor')), 4),
+            c: round(Average::mean($topResults->column('c')), 4),
         ));
 
         $io->success('OK');
