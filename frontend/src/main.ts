@@ -1,4 +1,10 @@
-import { enableProdMode, importProvidersFrom } from '@angular/core';
+import {
+  enableProdMode,
+  EnvironmentProviders,
+  importProvidersFrom,
+  LOCALE_ID,
+  Provider,
+} from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { RouteReuseStrategy, provideRouter } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
@@ -11,15 +17,28 @@ configure({
 import { routes } from '@app/shared/infrastructure/routes/app.routes';
 import { AppComponent } from '@app/app.component';
 import { environment } from './environments/environment';
+import { registerLocaleData } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import localePl from '@angular/common/locales/pl';
+import TranslateModuleFacade from '@app/core/application/translator/TranslateModuleFacade';
 
 if (environment.production) {
   enableProdMode();
 }
 
+registerLocaleData(localePl);
+
+const providers: Array<Provider | EnvironmentProviders> = [
+  { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+  { provide: LOCALE_ID, useValue: environment.defaultLanguage },
+  importProvidersFrom(
+    IonicModule.forRoot({}),
+    HttpClientModule,
+    TranslateModuleFacade.forRoot(),
+  ),
+  provideRouter(routes),
+];
+
 bootstrapApplication(AppComponent, {
-  providers: [
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    importProvidersFrom(IonicModule.forRoot({})),
-    provideRouter(routes),
-  ],
+  providers,
 });

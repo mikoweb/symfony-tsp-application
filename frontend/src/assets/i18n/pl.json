@@ -1,0 +1,9 @@
+{
+  "404_page": {
+    "title": "404 Code",
+    "description": "Nie znaleziono strony!"
+  },
+  "default_page": {
+    "form_title": "TSP"
+  }
+}

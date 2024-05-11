@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { CustomElementRegistry } from '@app/core/application/custom-element/custom-element';
 import commandBusLoader from '@app/shared/infrastructure/config/command-bus/loaders';
 import CommandBus from '@app/core/application/command-bus/command-bus';
-import LoadUserDataCommand from '@app/module/user/application/interaction/command/load-user-data/load-user-data-command';
 import { LayoutReady } from '@app/module/layout/ui/layout-ready';
 import { LayoutInitializer } from '@app/module/layout/ui/layout-initializer';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -16,18 +17,20 @@ import { RouterOutlet } from '@angular/router';
   imports: [IonicModule, CommonModule, RouterOutlet],
 })
 export class AppComponent {
-  constructor(appRef: ApplicationRef) {
+  constructor(
+    appRef: ApplicationRef,
+    private readonly translate: TranslateService
+  ) {
     this.initApp(appRef);
   }
 
   private async initApp(appRef: ApplicationRef) {
+    this.translate.setDefaultLang(environment.defaultLanguage);
     commandBusLoader();
     const commandBus = inject(CommandBus);
 
     CustomElementRegistry.init(appRef);
-    await import('../import-global-elements');
-
-    commandBus.execute(new LoadUserDataCommand());
+    // await import('../import-global-elements');
 
     LayoutReady.init();
     LayoutInitializer.init();
