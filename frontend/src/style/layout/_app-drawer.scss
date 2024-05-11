@@ -1,0 +1,32 @@
+@import "../app-variables";
+
+.app-drawer {
+  &__nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      > li {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    a {
+      color: $md-grey-900;
+      text-decoration: none;
+    }
+
+    ion-item.active {
+      --background: #{$md-red-100};
+    }
+  }
+}
+
+.app-drawer-toggle {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --color: #fff;
+}
