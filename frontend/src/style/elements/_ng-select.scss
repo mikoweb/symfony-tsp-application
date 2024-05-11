@@ -1,0 +1,13 @@
+@import "../app-variables";
+
+ng-select {
+  .ng-value {
+    background-color: $md-light-green-700 !important;
+  }
+}
+
+.ng-select-focused {
+  .ng-select-container::after {
+    border-bottom-color: $md-green-a400 !important;
+  }
+}

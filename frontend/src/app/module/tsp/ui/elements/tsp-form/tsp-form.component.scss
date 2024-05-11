@@ -1,0 +1,24 @@
+@import "../../../../../shared/ui/style/variables";
+
+.app-tsp-form {
+  margin-bottom: 25px;
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid $md-grey-300;
+    border-bottom: 1px solid $md-grey-300;
+
+    @media (max-width: 555px) {
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+
+    ion-button {
+      height: 50px;
+    }
+  }
+}

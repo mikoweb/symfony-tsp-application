@@ -6,5 +6,12 @@
   "default_page": {
     "form_title": "Dane wejściowe",
     "form_description": "Aby rozwiązać problem, wybierz lokalizacje i ustaw parametry algorytmu:"
+  },
+  "tsp_form": {
+    "button": "Rozwiąż problem",
+    "location_select_placeholder": "Podaj nazwy miejscowości...",
+    "location_select_type_to_search_text": "Wprowadź 3 lub więcej znaków",
+    "location_select_loading": "Ładowanie...",
+    "location_select_not_found": "Nie znaleziono miejscowości!"
   }
 }

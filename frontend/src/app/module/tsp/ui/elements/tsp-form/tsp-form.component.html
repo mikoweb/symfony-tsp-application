@@ -1,0 +1,33 @@
+<div class="app-tsp-form">
+  <form>
+    <div class="row">
+      <div class="col-xs-12">
+        <ng-select [items]="locationsForSelect | async"
+                   bindLabel="name"
+                   [multiple]="true"
+                   [hideSelected]="true"
+                   [minTermLength]="3"
+                   [trackByFn]="selectLocation"
+                   [loading]="locationsLoading"
+                   [placeholder]="'tsp_form.location_select_placeholder' | translate"
+                   [typeToSearchText]="'tsp_form.location_select_type_to_search_text' | translate"
+                   [loadingText]="'tsp_form.location_select_loading' | translate"
+                   [notFoundText]="'tsp_form.location_select_not_found' | translate"
+                   [typeahead]="locationInput"
+                   [(ngModel)]="selectedLocations"
+                   [ngModelOptions]="{standalone: true}">
+        </ng-select>
+      </div>
+    </div>
+    <div class="app-tsp-form__button">
+      <ion-button
+        fill="outline"
+        [disabled]="true">
+        {{ 'tsp_form.button' | translate }}
+      </ion-button>
+    </div>
+  </form>
+</div>
+<div style="margin-bottom:100px">
+  Selected locations: {{ selectedLocations | json }}
+</div>
