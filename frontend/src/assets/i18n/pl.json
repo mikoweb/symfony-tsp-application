@@ -4,6 +4,7 @@
     "description": "Nie znaleziono strony!"
   },
   "default_page": {
-    "form_title": "TSP"
+    "form_title": "Dane wejściowe",
+    "form_description": "Aby rozwiązać problem, wybierz lokalizacje i ustaw parametry algorytmu:"
   }
 }
