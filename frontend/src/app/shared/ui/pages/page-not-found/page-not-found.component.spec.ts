@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
 import { PageNotFoundComponent } from './page-not-found.component';
-import { testProviders } from '@app/module/core/application/test/test-providers';
+import { testProviders } from '@app/core/application/test/test-providers';
 
 describe('PageNotFoundComponent', () => {
   let component: PageNotFoundComponent;
