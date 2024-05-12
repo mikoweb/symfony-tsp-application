@@ -7,6 +7,9 @@
     "form_title": "Dane wejściowe",
     "form_description": "Aby rozwiązać problem, wybierz lokalizacje i ustaw parametry algorytmu:"
   },
+  "tsp_client": {
+    "common_validation_error": "Błąd walidacji!"
+  },
   "tsp_form": {
     "button": "Rozwiąż problem",
     "location_select_placeholder": "Podaj nazwy miejscowości...",
