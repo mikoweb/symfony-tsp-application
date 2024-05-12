@@ -11,6 +11,12 @@ import { SelectLocationDto } from '@app/module/tsp/ui/dto/select-location-dto';
 import { catchError, distinctUntilChanged, from, Observable, of, Subject, switchMap, tap } from 'rxjs';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { AsyncPipe, JsonPipe } from '@angular/common';
+import { SolveRequestDto } from '@app/module/tsp/ui/dto/solve-request-dto';
+import { LocationDto } from '@app/module/tsp/ui/dto/location-dto';
+import CommandBus from '@app/core/application/command-bus/command-bus';
+import {
+  SolveProblemCommand
+} from '@app/module/tsp/application/interaction/command/solve-problem/solve-problem-command';
 
 const { encapsulation, schemas } = customElementParams;
 
@@ -43,10 +49,13 @@ export class TspFormComponent extends CustomElementBaseComponent implements OnIn
   protected locationsLoading: boolean = false;
   protected locationInput = new Subject<string>();
 
+  protected formDisabled: boolean = false;
+
   constructor(
     ele: ElementRef,
     gsl: GlobalStyleLoader,
-    private findLocationsQuery: FindLocationsQuery
+    private findLocationsQuery: FindLocationsQuery,
+    private commandBus: CommandBus,
   ) {
     super(ele, gsl);
   }
@@ -57,6 +66,29 @@ export class TspFormComponent extends CustomElementBaseComponent implements OnIn
 
   ngOnInit(): void {
     this.loadLocations();
+  }
+
+  protected async onSubmit(): Promise<void> {
+    await this.submit();
+  }
+
+  protected async submit(): Promise<void> {
+    if (this.isFilled()) {
+      this.formDisabled = true;
+
+      const solveRequest: SolveRequestDto = new SolveRequestDto(
+        this.selectedLocations.map((location: SelectLocationDto) => {
+          return new LocationDto(location.lat, location.lng, location.name);
+        }
+      ));
+
+      await this.commandBus.execute(new SolveProblemCommand(solveRequest));
+      this.formDisabled = false;
+    }
+  }
+
+  protected isFilled(): boolean {
+    return this.selectedLocations.length > 0;
   }
 
   protected selectLocation(location: SelectLocationDto): string {
