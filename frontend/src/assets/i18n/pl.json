@@ -10,6 +10,9 @@
   "tsp_client": {
     "common_validation_error": "Błąd walidacji!"
   },
+  "tsp_problem": {
+    "error": "Wystąpił błąd podczas rozwiązywania problemu!"
+  },
   "tsp_form": {
     "button": "Rozwiąż problem",
     "location_select_placeholder": "Podaj nazwy miejscowości...",

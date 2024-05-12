@@ -7,6 +7,7 @@ import { SolutionResultStore } from '@app/module/tsp/domain/store/solution-resul
 import { Distance } from '@app/module/tsp/domain/vo/distance';
 import { Location } from '@app/module/tsp/domain/vo/location';
 import { Section } from '@app/module/tsp/domain/vo/section';
+import TranslatorService from '@app/core/application/translator/TranslatorService';
 
 @Injectable({
   providedIn: 'root',
@@ -18,25 +19,34 @@ export class SolveProblemHandler implements CommandHandler<SolveProblemCommand> 
     private readonly client: TspClient,
     private readonly messageService: MessageService,
     private readonly solutionResultStore: SolutionResultStore,
+    private readonly translator: TranslatorService,
   ) {}
 
   public async execute(command: SolveProblemCommand): Promise<void> {
     let response: any;
+    this.solutionResultStore.clear();
+    this.solutionResultStore.loading = true;
 
     try {
       response = await this.client.method.post('/tsp/solve', command.request);
     } catch (error: any) {
-      const message = await this.client.getValidationError(error.response);
+      this.solutionResultStore.loading = false;
+      const message: string = await this.client.getValidationError(error.response);
       await this.messageService.createError({message});
     }
 
     if (response) {
-      this.putLength(response.data);
-      this.putPath(response.data);
-      this.generateSections(response.data);
-
-      console.log(this.solutionResultStore);
+      try {
+        this.putLength(response.data);
+        this.putPath(response.data);
+        this.generateSections(response.data);
+      } catch (error: any) {
+        const message: string = await this.translator.get('tsp_problem.error');
+        await this.messageService.createError({message});
+      }
     }
+
+    this.solutionResultStore.loading = false;
   }
 
   private putLength(data: any): void {

@@ -23,7 +23,7 @@
       <ion-button
         fill="outline"
         (click)="onSubmit()"
-        [disabled]="!isFilled() && !formDisabled">
+        [disabled]="!isFilled() || formDisabled">
         {{ 'tsp_form.button' | translate }}
       </ion-button>
     </div>
