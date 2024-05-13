@@ -1,10 +1,6 @@
-import { LocationDto } from '@app/module/tsp/ui/dto/location-dto';
-
-export class SolveRequestDto {
+export class DefaultParametersDto {
   constructor(
-    public readonly locations: LocationDto[],
     public readonly iterations: number,
-    public readonly initialLocationIndex: number,
     public readonly alpha: number,
     public readonly beta: number,
     public readonly distanceCoefficient: number,

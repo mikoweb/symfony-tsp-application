@@ -11,13 +11,28 @@
     "common_validation_error": "Błąd walidacji!"
   },
   "tsp_problem": {
-    "error": "Wystąpił błąd podczas rozwiązywania problemu!"
+    "error": "Wystąpił błąd podczas rozwiązywania problemu!",
+    "retrieving_default_parameters_fail": "Nie udało się pobrać domyślnych parametrów!"
   },
   "tsp_form": {
+    "help_icon": "Pomoc",
     "button": "Rozwiąż problem",
     "location_select_placeholder": "Podaj nazwy miejscowości...",
     "location_select_type_to_search_text": "Wprowadź 3 lub więcej znaków",
     "location_select_loading": "Ładowanie...",
-    "location_select_not_found": "Nie znaleziono miejscowości!"
+    "location_select_not_found": "Nie znaleziono miejscowości!",
+    "initial_location_label": "Lokalizacja początkowa",
+    "alpha_label": "Alpha - wpływa na znaczenie feromonów",
+    "alpha_tooltip": "Parametr alpha jest wartością wykładnika potęgi feromonu.",
+    "beta_label": "Beta - wpływa na znaczenie odległości",
+    "beta_tooltip": "Parametr beta jest wartością wykładnika potęgi odwrotności odległości.",
+    "distance_coefficient_label": "Współczynnik odległości",
+    "distance_coefficient_tooltip": "Normalizuje wartość odwrotności odległości.",
+    "evaporation_label": "Współczynnik parowania",
+    "evaporation_tooltip": "Procent odparowania feromonu w każdej iteracji.",
+    "ant_factor_label": "Ant Factor - współczynnik mrówek",
+    "ant_factor_tooltip": "Od tego parametru zależy ilość mrówek. Liczba mrówek jest równa iloczynowi współczynnika i liczby miast.",
+    "c_label": "C - wartość początkowa feromonu",
+    "iterations_label": "Liczba iteracji"
   }
 }

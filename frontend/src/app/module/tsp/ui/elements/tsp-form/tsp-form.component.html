@@ -1,5 +1,5 @@
 <div class="app-tsp-form">
-  <form>
+  <form [formGroup]="form">
     <div class="row">
       <div class="col-xs-12">
         <ng-select [items]="locationsForSelect | async"
@@ -15,8 +15,150 @@
                    [notFoundText]="'tsp_form.location_select_not_found' | translate"
                    [typeahead]="locationInput"
                    [(ngModel)]="selectedLocations"
-                   [ngModelOptions]="{standalone: true}">
+                   [ngModelOptions]="{standalone: true}"
+                   (remove)="onRemoveLocation()">
         </ng-select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-lg-4">
+        <ion-select
+          formControlName="initialLocationIndex"
+          label="{{ 'tsp_form.initial_location_label' | translate }}"
+          label-placement="floating"
+          interface="action-sheet">
+          <ng-template ngFor let-location [ngForOf]="selectedLocations" let-i="index">
+            <ion-select-option [value]="i">{{ location.name }}</ion-select-option>
+          </ng-template>
+        </ion-select>
+      </div>
+      <div class="col-xs-12 col-lg-4">
+        <ion-input
+          formControlName="alpha"
+          required
+          label-placement="floating"
+          label="{{ 'tsp_form.alpha_label' | translate }}"
+          type="number"
+          step="0.1"
+          min="0.1"
+          max="10">
+          <ion-button fill="clear"
+                      slot="end"
+                      aria-label="{{ 'tsp_form.help_icon' | translate }}"
+                      matTooltip="{{ 'tsp_form.alpha_tooltip' | translate }}"
+                      matTooltipPosition="below"
+                      matTooltipHideDelay="500">
+            <ion-icon color="secondary" slot="icon-only" name="information-circle" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </div>
+      <div class="col-xs-12 col-lg-4">
+        <ion-input
+          formControlName="beta"
+          required
+          label-placement="floating"
+          label="{{ 'tsp_form.beta_label' | translate }}"
+          type="number"
+          step="0.1"
+          min="0.1"
+          max="10">
+          <ion-button fill="clear"
+                      slot="end"
+                      aria-label="{{ 'tsp_form.help_icon' | translate }}"
+                      matTooltip="{{ 'tsp_form.beta_tooltip' | translate }}"
+                      matTooltipPosition="below"
+                      matTooltipHideDelay="500">
+            <ion-icon color="secondary" slot="icon-only" name="information-circle" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-lg-4">
+        <ion-input
+          formControlName="distanceCoefficient"
+          required
+          label-placement="floating"
+          label="{{ 'tsp_form.distance_coefficient_label' | translate }}"
+          type="number"
+          step="1"
+          min="1"
+          max="10000">
+          <ion-button fill="clear"
+                      slot="end"
+                      aria-label="{{ 'tsp_form.help_icon' | translate }}"
+                      matTooltip="{{ 'tsp_form.distance_coefficient_tooltip' | translate }}"
+                      matTooltipPosition="below"
+                      matTooltipHideDelay="500">
+            <ion-icon color="secondary" slot="icon-only" name="information-circle" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </div>
+      <div class="col-xs-12 col-lg-4">
+        <ion-input
+          formControlName="evaporation"
+          required
+          label-placement="floating"
+          label="{{ 'tsp_form.evaporation_label' | translate }}"
+          type="number"
+          step="0.1"
+          min="0"
+          max="0.95">
+          <ion-button fill="clear"
+                      slot="end"
+                      aria-label="{{ 'tsp_form.help_icon' | translate }}"
+                      matTooltip="{{ 'tsp_form.evaporation_tooltip' | translate }}"
+                      matTooltipPosition="below"
+                      matTooltipHideDelay="500">
+            <ion-icon color="secondary" slot="icon-only" name="information-circle" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </div>
+      <div class="col-xs-12 col-lg-4">
+        <ion-input
+          formControlName="antFactor"
+          required
+          label-placement="floating"
+          label="{{ 'tsp_form.ant_factor_label' | translate }}"
+          type="number"
+          step="0.1"
+          min="0.1"
+          max="10">
+          <ion-button fill="clear"
+                      slot="end"
+                      aria-label="{{ 'tsp_form.help_icon' | translate }}"
+                      matTooltip="{{ 'tsp_form.ant_factor_tooltip' | translate }}"
+                      matTooltipPosition="below"
+                      matTooltipHideDelay="500">
+            <ion-icon color="secondary" slot="icon-only" name="information-circle" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-lg-4">
+        <ion-input
+          formControlName="c"
+          required
+          label-placement="floating"
+          label="{{ 'tsp_form.c_label' | translate }}"
+          type="number"
+          step="0.1"
+          min="0.1"
+          max="1">
+        </ion-input>
+      </div>
+      <div class="col-xs-12 col-lg-4">
+        <ion-input
+          formControlName="iterations"
+          required
+          label-placement="floating"
+          label="{{ 'tsp_form.iterations_label' | translate }}"
+          type="number"
+          step="1"
+          min="1"
+          max="1000">
+        </ion-input>
       </div>
     </div>
     <div class="app-tsp-form__button">
