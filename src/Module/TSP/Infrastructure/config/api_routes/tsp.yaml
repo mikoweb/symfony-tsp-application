@@ -2,3 +2,8 @@ api_tsp_solve:
     path: /solve
     controller: App\Module\TSP\UI\Controller\SolveController::solve
     methods: [POST]
+
+api_tsp_default_parameters:
+    path: /default-parameters
+    controller: App\Module\TSP\UI\Controller\DefaultParametersController::get
+    methods: [GET]
