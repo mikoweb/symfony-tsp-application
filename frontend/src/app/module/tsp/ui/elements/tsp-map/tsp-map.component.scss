@@ -1,0 +1,12 @@
+.app-tsp-map {
+  margin: 25px 0;
+
+  google-map {
+    width: 100%;
+    display: block;
+  }
+
+  .map-container {
+    width: 100% !important;
+  }
+}

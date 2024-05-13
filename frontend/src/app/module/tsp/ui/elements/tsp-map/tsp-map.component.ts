@@ -38,7 +38,7 @@ export class TspMapComponent extends CustomElementBaseComponent implements OnIni
     = `${CustomElementBaseComponent.ngPrefix}-${TspMapComponent.customElementName}`;
 
   protected apiMapsLoaded: boolean = false;
-  protected zoom: number = 6.7;
+  protected zoom: number = 6;
   protected center: any = {lat: 52.90700093005, lng: 18.65257200193756};
   protected markers: any[] = [];
   protected markerOptions: any[] = [];

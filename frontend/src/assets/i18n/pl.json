@@ -34,5 +34,9 @@
     "ant_factor_tooltip": "Od tego parametru zależy ilość mrówek. Liczba mrówek jest równa iloczynowi współczynnika i liczby miast.",
     "c_label": "C - wartość początkowa feromonu",
     "iterations_label": "Liczba iteracji"
+  },
+  "tsp_results": {
+    "title": "Wyniki",
+    "total_distance": "Łączny dystans"
   }
 }

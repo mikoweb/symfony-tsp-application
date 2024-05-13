@@ -1,12 +1,12 @@
 <div *mobxAutorun="{ detach: false }">
   <ng-template [ngIf]="apiMapsLoaded && !store.loading && store.path.length > 0">
-    <br />
-    <br />
-    <google-map [center]="center" [zoom]="zoom" [width]="1000" [height]="1000">
-      <ng-template ngFor let-marker [ngForOf]="markers" let-i="index">
-        <map-marker [position]="marker" [options]="markerOptions[i]" />
-      </ng-template>
-      <map-polyline [path]="path" />
-    </google-map>
+    <div class="app-tsp-map">
+      <google-map [center]="center" [zoom]="zoom" [width]="1000" [height]="1000">
+        <ng-template ngFor let-marker [ngForOf]="markers" let-i="index">
+          <map-marker [position]="marker" [options]="markerOptions[i]" />
+        </ng-template>
+        <map-polyline [path]="path" />
+      </google-map>
+    </div>
   </ng-template>
 </div>

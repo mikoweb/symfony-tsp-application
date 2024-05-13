@@ -3,15 +3,33 @@
     <ion-progress-bar type="indeterminate"></ion-progress-bar>
   </ng-template>
   <ng-template [ngIf]="!store.loading && store.path.length > 0">
-    <p>Łączny dystans: {{ store.length?.value | number :'1.2-2' }} {{ store.length?.unit }}</p>
-    <div class="row">
-      <ng-template ngFor let-section [ngForOf]="store.sections" let-i="index">
-        <ng-template [ngIf]="i === 0">
-          <div class="col-xs-12 col-xl-2">{{ section.a.name }}</div>
+    <div class="app-tsp-results">
+      <h2 class="app-section-title">{{ 'tsp_results.title' | translate }}</h2>
+      <p class="app-tsp-results__length">
+        <span class="app-tsp-results__length-label">{{ 'tsp_results.total_distance' | translate }}:</span>
+        {{ store.length?.value | number :'1.2-2' }} {{ store.length?.unit }}
+      </p>
+      <div class="app-tsp-results__grid">
+        <ng-template ngFor let-section [ngForOf]="store.sections" let-i="index">
+          <ng-template [ngIf]="i === 0">
+            <div>
+              <div class="app-tsp-result-location">
+                {{ section.a.name }}
+              </div>
+            </div>
+          </ng-template>
+          <div>
+            <div class="app-tsp-result-distance">
+              <span>{{ section.length.value | number :'1.2-2' }} {{ section.length.unit }}</span>
+            </div>
+          </div>
+          <div>
+            <div class="app-tsp-result-location">
+              {{ section.b.name }}
+            </div>
+          </div>
         </ng-template>
-        <div class="col-xs-12 col-xl-2"> - {{ section.length.value | number :'1.2-2' }} {{ section.length.unit }}</div>
-        <div class="col-xs-12 col-xl-2"> - {{ section.b.name }}</div>
-      </ng-template>
+      </div>
     </div>
   </ng-template>
 </div>
