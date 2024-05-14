@@ -116,6 +116,10 @@ JSON Body:
 }
 ```
 
+## Screenshot
+
+![Screenshot](./images/Implementacja-Algorytmu-Mrówkowego-w-Problemie-Komiwojażera.png)
+
 ## Copyrights
 
 Copyright © Rafał Mikołajun 2024.
